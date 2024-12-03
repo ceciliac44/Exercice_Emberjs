@@ -3,14 +3,12 @@
   <ul>
         <li><LinkTo @route="index">Acceuil</LinkTo></li>
         <li><LinkTo @route="link">Lien</LinkTo></li>
-         <li><LinkTo @route="new">Liste d'utilisateur</LinkTo></li>
+         <li><LinkTo @route="users">Liste d'utilisateur</LinkTo></li>
 
   </ul>
 </nav>
 
-<button type="button" {{on "click" this.showAlert}} >
-  afficher une alerte
-</button>
+
 {{outlet}}
 
 

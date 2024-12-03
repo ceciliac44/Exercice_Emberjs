@@ -8,8 +8,4 @@ export default class UserDataService extends Service {
     { nom: 'Doe', prenom: 'John', id: 4 },
     { nom: 'Smith', prenom: 'Anna', id: 5 },
   ];
-
-  getUserById(id) {
-    return this.users.find((user) => user.id === parseInt(id, 10));
-  }
 }
