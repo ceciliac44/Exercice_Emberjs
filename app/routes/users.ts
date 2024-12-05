@@ -4,7 +4,7 @@ import type UserDataService from 'my-app/services/user-data';
 import type { User } from 'my-app/services/user-data';
 
 
-export default class NewRoute extends Route {
+export default class UsersRoute extends Route {
   @service declare userData: UserDataService;
 
   model(): User[] {
