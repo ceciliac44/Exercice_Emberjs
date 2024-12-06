@@ -7,20 +7,12 @@ module('Integration | Component | user-card', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
-    await render(hbs`<UserCard />`);
-
-    assert.dom().hasText('');
-
     // Template block usage:
     await render(hbs`
-      <UserCard>
-        template block text
-      </UserCard>
+      <UserCard @user={{hash nom="Saquet" prenom="Fredon" id=1}} />
+
     `);
 
-    assert.dom().hasText('template block text');
+    assert.dom().hasText('Nom: Saquet Prénom: Fredon');
   });
 });
