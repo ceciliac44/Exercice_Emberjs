@@ -5,6 +5,7 @@ import type { User } from 'my-app/services/user-data';
 import { on } from '@ember/modifier';
 import { LinkTo } from '@ember/routing';
 import UserControler from 'my-app/controllers/users';
+import UserCard from "my-app/components/user-card"
 
 
 interface Signature {
@@ -22,7 +23,8 @@ export default RouteTemplate<Signature>(
 <ul>
   {{#each @model as |user|}}
     <li>
-     <LinkTo @route="users.show" @model={{user}}> Utilisateur {{user.id}} </LinkTo>
+     <LinkTo @route="users.show" @model={{user}}> Utilisateur {{user.id}} <UserCard @user={{user}}
+/> </LinkTo>
     </li>
   {{/each}}
 </ul></template>,
