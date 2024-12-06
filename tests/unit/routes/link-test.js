@@ -1,11 +1,12 @@
 import { module, test } from 'qunit';
+import { visit } from '@ember/test-helpers';
 import { setupTest } from 'my-app/tests/helpers';
 
-module('Unit | Route | link', function (hooks) {
+module('Acceptance | Route | link', function (hooks) {
   setupTest(hooks);
 
-  test('it exists', function (assert) {
-    let route = this.owner.lookup('route:link');
-    assert.ok(route);
+  test('it exists', async function (assert) {
+    await visit('/link');
+    assert.dom().containsText('nouveau lien');
   });
 });

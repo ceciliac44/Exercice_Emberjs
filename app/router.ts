@@ -8,6 +8,7 @@ export default class Router extends EmberRouter {
 
 Router.map(function () {
   this.route('link');
+  this.route('gts-template-works');
   this.route('users', function () {
     this.route('show', { path: '/:id' });
   });
