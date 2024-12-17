@@ -8,10 +8,10 @@ export interface User {
 
 export default class UserDataService extends Service {
   users: User[] = [
-    { nom: 'Saquet', prenom: 'Fredon', id: 1 },
-    { nom: 'Pierre', prenom: 'Paul', id: 2 },
-    { nom: 'Cappia', prenom: 'Cecilia', id: 3 },
-    { nom: 'Doe', prenom: 'John', id: 4 },
-    { nom: 'Smith', prenom: 'Anna', id: 5 },
+    { nom: 'saquet', prenom: 'fredon', id: 1 },
+    { nom: 'pierre', prenom: 'paul', id: 2 },
+    { nom: 'cappia', prenom: 'cecilia', id: 3 },
+    { nom: 'doe', prenom: 'john', id: 4 },
+    { nom: 'smith', prenom: 'anna', id: 5 },
   ];
 }
