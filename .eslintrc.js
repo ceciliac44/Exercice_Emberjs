@@ -2,7 +2,6 @@
 
 module.exports = {
   root: true,
-  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -26,6 +25,8 @@ module.exports = {
   overrides: [
     // node files
     {
+      parser: '@babel/eslint-parser',
+
       files: [
         './.eslintrc.js',
         './.prettierrc.js',
@@ -50,17 +51,8 @@ module.exports = {
     {
       // test files
       files: ['tests/**/*-test.{js,ts}'],
+      parser: '@babel/eslint-parser',
       extends: ['plugin:qunit/recommended'],
-    },
-    {
-      files: ['**/*.gjs'],
-      parser: 'ember-eslint-parser',
-      plugins: ['ember'],
-      extends: [
-        'eslint:recommended',
-        'plugin:ember/recommended',
-        'plugin:ember/recommended-gjs',
-      ],
     },
     {
       files: ['**/*.gts'],

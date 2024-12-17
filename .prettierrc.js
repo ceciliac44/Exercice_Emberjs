@@ -8,5 +8,12 @@ module.exports = {
         singleQuote: true,
       },
     },
+    {
+      files: '*.gts',
+      options: {
+        plugins: ['prettier-plugin-ember-template-tag'],
+        singleQuote: true,
+      },
+    },
   ],
 };
