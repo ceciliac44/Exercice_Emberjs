@@ -1,7 +1,12 @@
 import {capitalize} from '@ember/string'
 import Component from '@glimmer/component'
+import type {User} from '../services/user-data'
 
-export default class UserCard extends Component{
+interface Signature {
+  Args: {user : User}
+}
+
+export default class UserCard extends Component<Signature> {
   get fullName(){
   return `${capitalize(this.args.user.nom)} ${capitalize(this.args.user.prenom)}`
 }

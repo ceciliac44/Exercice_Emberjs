@@ -1,6 +1,7 @@
 import Service from '@ember/service';
 
 export interface User {
+  /** foo  */
   nom: string;
   prenom: string;
   id: number;
