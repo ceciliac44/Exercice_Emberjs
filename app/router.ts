@@ -12,4 +12,5 @@ Router.map(function () {
   this.route('users', function () {
     this.route('show', { path: '/:id' });
   });
+  this.route('long-list');
 });
