@@ -12,8 +12,9 @@
     "paths": {
       "my-app/tests/*": [
         "tests/*"
-      ], "ember-composable-helpers/*": [
-        "../node_modules/ember-composable-helpers/addon/*"
+      ],
+      "ember-composable-helpers/*": [
+        "./node_modules/ember-composable-helpers/addon/*"
       ],
       "my-app/*": [
         "app/*"
